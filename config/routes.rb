@@ -1,5 +1,5 @@
 FirstApp::Application.routes.draw do
-  root :to => 'main#index'
+  root :to => "main#index"
   
   match "/about" => "main#about"
   match "/help" => "main#help"
