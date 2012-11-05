@@ -1,10 +1,15 @@
 FirstApp::Application.routes.draw do
-  get "main/index"
+  root :to => 'main#index'
+  
+  match "/about" => "main#about"
+  match "/help" => "main#help"
+  
+#  get "main/index"
+#  get "main/about"
+#  get "main/help"
 
-  get "main/about"
-
-  get "main/help"
-
+#  resources :static_pages
+#  match "/patients/:id" => "patients#show"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

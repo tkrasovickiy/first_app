@@ -1,5 +1,10 @@
 class MainController < ApplicationController
-root :to 'main#index'
-match "/about" => "main#about"
-match "/help" => "main#help"
+  def index
+  end
+
+  def about
+  end
+
+  def help
+  end
 end
