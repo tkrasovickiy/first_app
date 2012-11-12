@@ -7,9 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<a href = "/"> Index </a>
-<a href = "/about"> About </a>
-<a href = "/help"> Help </a>
+
+<%= link_to "Index", :controller => 'main', :action => 'index' %>
+<%= link_to "About", :controller => 'main', :action => 'about' %>
+<%= link_to "Help", :controller => 'main', :action => 'help' %>
+
+
 <%= yield %>
 
 </body>
