@@ -7,13 +7,19 @@
   <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
 </head>
 <body>
-
-<%= link_to "Главная", :controller => 'main', :action => 'home' %>
-<%= link_to "О проекте", :controller => 'main', :action => 'about' %>
-<%= link_to "Помощь", :controller => 'main', :action => 'help' %>
-
-
-<%= yield %>
-
+  <table style="border: 1px solid #000" cellpadding="0" cellspacing="0" align="center" valign="top" width="70%" height="100%">
+    <tr height="15%">
+      <td colspan="3">Логотип.ру</td>
+    </tr>
+    <tr>
+      <td width="25%">
+        <%= link_to "Главная", :controller => 'main', :action => 'home' %> <br/>
+        <%= link_to "О проекте", :controller => 'main', :action => 'about' %> <br/>
+        <%= link_to "Помощь", :controller => 'main', :action => 'help' %>
+      </td>
+      <td width="50%"> <%= yield %> </td>
+      <td width="25%">Активность на сайте</td>
+    </tr>
+  </table>
 </body>
 </html>
